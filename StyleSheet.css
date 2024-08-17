@@ -1,0 +1,40 @@
+/*  Stylesheet for On The Job
+    8/17/2024
+    Creating a visually appealing website for this project, aiming to provide a colorful experience for users.
+*/
+
+
+body{
+    background-color:#b9b7a0 ;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+
+}
+/* navagation */
+
+.navBar ul{
+    list-style: none;
+    background-color: #314f63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: auto; 
+    padding: 12px 6px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #cdcccc;
+    font-size: 20px;
+  
+}
+
+
+h1{
+    
+    color: #3f5055;
+}
