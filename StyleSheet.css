@@ -4,37 +4,51 @@
 */
 
 
+/* !DELETE WHEN DONE!
+colors used #cdcccc  #314f63 save for footer 
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+
 body{
     background-color:#b9b7a0 ;
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway', sans-serif;
-
 }
-/* navagation */
 
+/* Navagation Begins*/
+.header-container{
+    display: flex;
+    background-color: #314f63;
+    padding: 10px,20px;
+    align-items: center;
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.212);
+}
+.header-container h1{
+    color: #cdcccc;
+    margin-left: 20px;
+}
+.navBar{
+   flex-grow: 1;
+}
 .navBar ul{
     list-style: none;
-    background-color: #314f63;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: auto; 
-    padding: 12px 6px;
-    max-width: 500px;
-    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 25px;
 }
-
-.navBar a{
+.navBar ul a{
     text-decoration: none;
     color: #cdcccc;
     font-size: 20px;
-  
+}
+/* Navagation Ends */
+
+/* Hero Content Begins */
+.heroContent img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
-
-h1{
-    
-    color: #3f5055;
-}
+/* Hero Content ends  */
