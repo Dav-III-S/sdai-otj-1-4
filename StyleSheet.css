@@ -7,6 +7,9 @@
 /* !DELETE WHEN DONE!
 colors used #cdcccc  #314f63 save for footer 
 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+* {
+    box-sizing: border-box;
+}
 
 body{
     background-color:#b9b7a0 ;
@@ -101,31 +104,32 @@ body{
  /* About-US ends  */
 
  /* Menu starts here */
- .menu{
-    margin: 0%;
-    padding: 10px;
- }
- 
- .menu h2{
-    text-align: center; 
-    font-weight: 600;
-    color: #314f63;
-    margin-bottom: 20px;
-    font-size: 30px;
-    border-bottom: 4px solid #cdcccc;
-    padding-bottom: 10px;
-    border-radius: 5px;
- }
+ .menu {
+    margin: 0;
+    padding: 20px;
+}
 
-.menu-wraps h3, .menu-sides h3 {
+.menu h2 {
     text-align: center;
     font-weight: 600;
     color: #314f63;
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 30px;
+    font-size: 32px;
     border-bottom: 4px solid #cdcccc;
     padding-bottom: 10px;
     border-radius: 5px;
+}
+
+.menu-wraps h3, .menu-sides h3 {
+    font-weight: 600;
+    color: #314f63;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 4px solid #cdcccc;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 5%; /* Center-align the text within each section */
 }
 
 .menu-container {
@@ -133,15 +137,32 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
- }
-    
-.menu-wraps, .menu-sides {
-    width: 100%; /* Adjust width to give some space for the vertical line */
+    gap: 20px; 
 }
-    
 
+.menu-wraps, .menu-sides {
+    flex: 1;
+    padding: 10px;
+}
+
+.menu-container h4 {
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.menu-container p {
+    font-size: 16px;
+    margin-left: 5%;
+    text-indent: 20px;
+    white-space: normal;
+    line-height: 1.5; 
+}
+
+
+/* End of menu */
 
 /* Vertical line */
+
  .parent-container {
     position: relative;
     height: 400px;
@@ -150,19 +171,18 @@ body{
 
 .vl {
     border-left: 6px solid #314f63;
-    height: 500px;
+    height: 600px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
+    margin-top: 50%;
     top: 0;
     z-index: 10;
     border-radius: 5px;
 }
 /* Vertical line end */
 
-
-  /* End of menu */
-  /* Developers Favorites   */
+/* Developers Favorites   */
 
 .devsFavs h2{
     text-align: center; 
@@ -195,8 +215,53 @@ body{
 .dev-favorites-gallery img {
     height: 300px;
     width: 450px;
-    object-fit: cover; /* Crops the image to fill the dimensions */
+    object-fit: cover; 
     border: 3px solid #cdcccc; 
+    border-radius: 8px; 
+    padding: 5px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Developers favorites end */
+
+/* Location and hours begin */
+.hours-location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px; 
+}
+
+.location, .hours {
+    flex: 1; 
+    padding: 10px;
+}
+
+/* Vertical Line */
+.vl-2 {
+    border-left: 6px solid #314f63;
+    height: 200px; 
+    align-self: stretch; 
+    margin: 15 20px;
+    margin-top: 15px;
+}
+
+/* Location and hours ends */
+
+/* Footer Begins */
+.footer-socialmedia{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.241), rgba(0, 0, 0, 0.225));
+    padding: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.footer-socialmedia img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover; 
+    border: 2px solid #cdcccc; 
     border-radius: 8px; 
     padding: 5px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
