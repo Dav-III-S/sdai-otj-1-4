@@ -129,14 +129,14 @@ body {
 }
 
 .menu-wraps h3, .menu-sides h3 {
+    text-align: center;
     font-weight: 600;
     color: #314f63;
     margin-bottom: 1.25em; /* 20px */
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.875rem; /* 30px */
     border-bottom: 0.25em solid #cdcccc; /* 4px */
-    padding-bottom: 0.3125em; /* 5px */
-    border-radius: 0.125em; /* 2px */
-    display: inline-block;
+    padding-bottom: 0.625em; /* 10px */
+    border-radius: 0.3125em; /* 5px */
     margin-left: 5%;
 }
 
@@ -257,19 +257,24 @@ body {
     padding: 0.625em; /* 10px */
 }
 
-/* Vertical Line */
+.day{
+    font-weight: bold;
+}
+
+/* Vertical Line for location & hours*/
 .vl-2 {
     border-left: 0.375em solid #314f63; /* 6px */
     height: 12.5em; /* 200px */
     align-self: stretch; 
     margin: 0.9375em 1.25em; /* 15px 20px */
-    margin-top: 1.5625em; /* 25px */
     border-radius: 0.3125em; /* 5px */
+    
 }
 /* Location and Hours Ends */
 
 /* Footer Begins */
 .footer-socialmedia {
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     gap: 0.9375em; /* 15px */
