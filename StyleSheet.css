@@ -228,7 +228,7 @@ body {
 /* Developers Favorites End */
 
 /* Location and Hours Begin */
-.hours-location-container {
+.hoursLocationContainer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -236,12 +236,12 @@ body {
     gap: 1.25em; /* 20px */
 }
 
-.hours-location-container ul {
+.hoursLocationContainer ul {
     list-style: none;
     font-size: 1.125rem; /* 18px */
 }
 
-.hours-location-container h2 {
+.hoursLocationContainer h2 {
     text-align: center;
     font-weight: 600;
     color: #314f63;
